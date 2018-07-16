@@ -10,30 +10,31 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/main.css" type="text/css" media="all">
         <style>
-
-	    body::before{background: none !important;}	</style>
-	        <style>
+	        body::before
+            {
+                background: none !important;
+            }
+            body::after
+            {
+                content: '';
+                background: url('img/notify_clients.jpg') !important;
+                opacity: 0.35;
+                top: 0px;
+                left: 0px;
+                bottom: 0px;
+                right: 0px;
+                position: fixed;
+                z-index: -1 !important;
+                background-size:cover;
+    	    }
+    	    body{
+    		    background: #415b91 !important;
+    	    }
             a{
                 color:#ffffff !important;
                 transition: all ease 400ms;
-            }            
-	        	    body::after{
-    		content: '';
-    		background: url('img/notify_clients.jpg') !important;
-    		opacity: 0.35;
-    		top: 0px;
-    		left: 0px;
-    		bottom: 0px;
-    		right: 0px;
-    		position: fixed;
-    		z-index: -1 !important;                    
-    		background-size:cover;
-    	    }
-    	    body{
-    		background: #415b91 !important;
-    	    }
-	            </style>	
-    <link type="text/css" rel="stylesheet" href="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content.css"></head>
+            }
+        </style>
     <body style="background: #847257; color:#ffffff !important;">
         <div class="container-fluid main-container">
             <div class="row">
